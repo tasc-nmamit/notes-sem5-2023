@@ -35,4 +35,4 @@ An **agent** is just something that perceives and acts. n this approach, AI is
 
 Making correct inferences is sometimes part of being a rational agent, because one way to act rationally is to think rationally towards a conclusion and then act towards it.
 
-On the other hand, correct inference is not _all_ of rationality, because there are often situations where there is no provably correct thing to do, yet something must still be done. There are also ways of acting rationally that cannot be reasonably said to involve inference. For example, pulling one's hand off of a hot stove is a reflex action that is more successful than a slower action taken after careful deliberation.
+On the other hand, correct inference is not _all_ of rationality, because **there are often situations where there is no provably correct thing to do**, yet something must still be done. There are also ways of acting rationally that cannot be reasonably said to involve inference. For example, pulling one's hand off of a hot stove is a reflex action that is more successful than a slower action taken after careful deliberation.

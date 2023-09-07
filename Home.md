@@ -1,10 +1,10 @@
-# [[NNDL/Overview|NNDL]]
+# [[NNDL Overview|NNDL]]
 
-# [[AI]]
+# [[AI Overview|AI]]
 
-# [[CNC]]
+# [[CNC Overview|CNC]]
 
-# [[CV]]
+# [[CV Overview|CV]]
 
 ---
 

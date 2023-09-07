@@ -6,6 +6,8 @@
 
 - From biological to artificial neurons
 - Perceptron & Multilayer Perceptron
+- Activation function and it's types
+- 
 
 ---
 
