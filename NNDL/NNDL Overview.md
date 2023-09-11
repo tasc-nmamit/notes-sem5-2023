@@ -18,15 +18,15 @@ Training deep neural networks
 - Batch normalization
 
 ## Important Concepts
-Activation Function
-Back Propagation and Forward Propagation algorithm 
+Activation Function  
+Back Propagation and Forward Propagation algorithm  
 Optimisers
 
 ---
 
 # Unit 2 CNN
 
-Convolutional Neural Networks
+Convolutional Neural Networks  
 (used for images...)
 
 ---

@@ -1,6 +1,12 @@
 
 5 Sept 2023
 
+# What is a neural network?
+
+
+
+---
+
 The Hierarchy
 
 AI → ML → NN → DL → GAN
@@ -35,7 +41,7 @@ But we cannot write the list of instructions to recognize a face or to write a i
 
 Consider the example of an 'infant brain'. 
 
-Within  a matter of months after birth, infants can recognize the faces of their parents, discern discrete objects from their backgrounds, and even tell apart voices.
+Within a matter of months after birth, infants can recognize the faces of their parents, discern discrete objects from their backgrounds, and even tell apart voices.
 
 NN & DL are umm a simulation of human brain.
 

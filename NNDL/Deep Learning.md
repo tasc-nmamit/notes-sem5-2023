@@ -1,12 +1,12 @@
 5 Sept 2023
 
 ### Definition
-
 Deep Learning is a subset of a more general field of AI called ML, which is predicated on this idea of **learning from example**.
 
 ---
 
 # The neuron-human brain (Analogy for Deep Learning)
+
 (6m MSE, 10m SEE)
 
 - The foundational unit of the human brain is the **neuron**.
@@ -65,7 +65,7 @@ Multiply all input values with corresponding weight values and calculate the wei
 $$
 \Sigma (wi*xi) = x1*w1 + x2*w2 + ... + wn*xn
 $$
-Activation function → converts the signal to lineararity format or non-lineararity format
+Activation function → converts the signal to lineararity format or non-lineararity format  
 for this we need bias?
 $$
 \Sigma (wi*xi) + b
@@ -92,10 +92,10 @@ There is an additional hidden layer. And there is backward propagation of error.
 7 Sep 2023
 # Activation function 
 
-Q. Explain activation function with examples.
-Q. Differentiate between sigmoid and relu.
-Q. Explain dead relu problem and how it can be overcome with the help of leaky relu.
-Q. explain vanishing gradient problem with an example.
+Q. Explain activation function with examples.  
+Q. Differentiate between sigmoid and relu.  
+Q. Explain dead relu problem and how it can be overcome with the help of leaky relu.  
+Q. explain vanishing gradient problem with an example.  
 Q. Explain exploding gradient problem with an example.
 
 Definition: It is the internal state of the neuron. It represents is used to convert the input signal of ANN node to an output signal.
@@ -105,8 +105,10 @@ It is applied to the weighted sum of inputs and biases of the neuron.
 - It introduces the non linearity to the output of individual neurons or artificial neurons.
 - Decides whether a neuron should be activated or not based on input signals and weights
 
-ps. Linearity vs non-linearity in this context
+ps. Linearity vs non-linearity in this context  
 Without the activation function, the output will be linear ($\Sigma wi*xi$). Activation function makes it non linear by applying say sigmoid function etc...
+
+![[Activation functions.png]]
 
 ## Linear activation function
 
@@ -120,16 +122,17 @@ In an ideal system, activation function would be linear.
 - It is unable to learn complex relationship between input features.
 - Typically used in regression problems.
 
-> For exam, draw any NN (with say a few hidden layers and finally the output) of your choice and explain the activation function.
+> [!calculation]-  
+> For exam, draw any NN (with say a few hidden layers and finally the output) of your choice and explain the activation function.  
 > ![[Perceptron.png|500]]
 >
-> Apply Linear activation function on the input. Take 3 inputs $x1,\ x2\ and\ x3$
-> 	Step 1: calculate weighted sum + bias
+> Apply Linear activation function on the input. Take 3 inputs $x1,\ x2\ and\ x3$  
+> 	Step 1: calculate weighted sum + bias  
 > 	Step 2: Apply Linear AF $f(x) = x$
 >
->Now the apply the same for hidden layers....
->Finally do this until you get the output.
->![[NN with 1 hidden layer.png|400]]
+>Now the apply the same for hidden layers....  
+>Finally do this until you get the output.  
+>![[NN with 1 hidden layer.png|400]]  
 >![[NN with 1 hidden layer 2.png|400]]
 
 ## Sigmoid activation function
@@ -145,10 +148,44 @@ $$
 f(x) =  \frac{\mathrm{1} }{\mathrm{1} + e^{-x} } 
 $$
 
+![[Sigmoid function.png]]
+
+>[!calculate]-  
+>Calculation of output using sigmoid activation function - refer notes and insert photo
+>
+
+## Relu Activation Function
+
+Formula: $f(x) = max(0, x)$  
+![[Relu activation function graph.png]]
+
+- Computationally fast
+- Eliminates the problems such as vanishing and exploding gradient in sigmoid activation function
+- Problem with ReLu is dead ReLu
+
+## Tanh activation function (Hyperbolic tangent)
+
+Formula: 
+$$
+f(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}}
+$$
+where e = Euler's number $\approxeq$ 2.71828
+
+## Leaky ReLu
+
+Formula: $f(x) = max(ax, x)$
+
+It is the variation of the standard ReLu activation function that addresses some of the limitation of the ReLu function such as 'dying ReLu' problem.
+
+
 ---
 
+# Forward & Backward propagation #imp #10m
+
+>[!Diagram]  
+>Consider the following NN (notebook)
+>
 
 
-Forward & Backward propagation
 
-Equation - $\Sigma$
+---

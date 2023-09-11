@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"72624e81444a1ed3","type":"file","file":"AI/Approaches or Views of AI.md","x":-340,"y":-540,"width":400,"height":269},
+		{"id":"bba2301f0dbdecfc","type":"file","file":"AI/AI Overview.md","x":-1000,"y":-340,"width":500,"height":443},
+		{"id":"0d930a14080696eb","x":-980,"y":-820,"width":460,"height":280,"type":"file","file":"AI/AI - A modern approach 3rd Edition.pdf"}
+	],
+	"edges":[
+		{"id":"4ab554ca53efda4f","fromNode":"bba2301f0dbdecfc","fromSide":"right","toNode":"72624e81444a1ed3","toSide":"left"},
+		{"id":"2ef802d3e362730a","fromNode":"bba2301f0dbdecfc","fromSide":"top","toNode":"0d930a14080696eb","toSide":"bottom"}
+	]
+}
