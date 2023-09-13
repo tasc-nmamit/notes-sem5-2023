@@ -40,8 +40,9 @@ which shows different devices at different layers
 - router → network layer
 - sender/receiver → application layer
 
-PDU are referred by different names across different layers of the OSI Model: 
-- Physical Layer - bits/electrical signals
+PDU are referred by different names across different layers of the OSI Model:  
+(data travels though the transmission media/link as electrical signals which are then interpreted as bits and so on...)
+- Physical Layer - bits/electrical signals 
 - Data Link Layer - frame (called datagram in TCP/IP model)
 - Network Layer - packet
 - Transport Layer - segment (TCP), datagram (UDP)
@@ -64,7 +65,7 @@ End to end communication/communication → Transport layer
 
 The TCP/IP model came before the OSI model.
 
-Q. Explain why OSI model didn't replace TCP/IP model?  
+Q. Explain why OSI model didn't replace TCP/IP model (aka internet model)?  
 The OSI stack is a rather theoretical/abstract _model_ (and standard) for networking layers, but it has little practical relevance and mainly survives as a subject of CS classes.  
 TCP/IP is a suite of concrete networking protocols that have seen overwhelming adoption on the internet. It roughly maps to the layers 3 and 4 in the OSI model.  
 
@@ -74,9 +75,61 @@ TCI/IP is not **conceptual** but it is a concrete implementation of the OSI.
 
 ---
 
+# Signals
 
+data travels though the transmission media/link as electrical signals which are then interpreted as bits and so on...
 
+## Types 
+- Analog
+- Digital
 
+## Analog signals 
 
+### Can take 2 forms
+- Periodic
+	- simple → a single sine wave
+	- composite → composed of multiple sine waves
+- Non-periodic (aperiodic)
 
+![insert image....]
+### Parameters of a simple periodic signal
+- Peak amplitude - absolute value of highest intensity (measured in volts)
+- Phase - (measured in radians degree)
+- Period & Frequency
+	- Period - (measured in s)
+	- Frequency - (measured in $s^{-1}$)
+- Wavelength → $\lambda = c/f = c \times T$
+
+### Parameters of composite periodic signal
+- Bandwidth → we measure bandwidth in composite signals
+	- Bandwidth = difference b/w highest and lowest frequencies contained in that signal
+
+## Digital Signals
+
+A digital signal can have multiple levels.
+
+number of bits transmitted per level = $\log_{2}L$
+
+![](Pasted%20image%2020230912133626.png)
+
+### Bit rate
+- Number of bits transmitted per second
+
+### Bit Length
+- $= 1/bitrate$
+
+>[!Problems]  
+>Q1. Assume we need to download text documents at the rate of 100 pages per second. What is the required bit rate of the channel? A page is an average of 24 lines with 80 characters in each line. What is the bit rate and bit length?
+>
+>Ans: 
+>
+>Assuming each character in the page takes 8 bits.
+>
+>Bit rate = no. of pages x no. of lines x avg. no of characters x no. of bits per character  
+>Bit rate = 100 x 24 x 80 x 8  
+>Bit rate = 1536000 bits/s = 1.536Mbps
+>
+Bit length = 1/1536000 = 0.651 $\micro s$
+
+---
 

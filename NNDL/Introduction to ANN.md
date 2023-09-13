@@ -3,8 +3,6 @@
 
 # What is a neural network?
 
-
-
 ---
 
 The Hierarchy

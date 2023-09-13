@@ -44,7 +44,7 @@ Textbook
 
 # Chapter 2 : Intelligent Agents
 
-11 September 2023
+2023-09-11
 
 ## What is an agent?
 
@@ -114,3 +114,55 @@ Vacuum-cleaner with just two rooms
 
 ---
 
+2023-09-12
+
+## Good Behaviour: The concept of rationality
+
+**Rationality** = doing the right thing...  
+But what does right thing mean? And how do you measure it?
+
+### Rationality at any given depends on 4 things
+- Performance measure 
+- Agent's prior knowledge of the environment
+- Actions that agent can perform
+- Agent's percept to date
+
+### Vacuum Cleaner is a rational agent or not? (refer ppt)
+
+It depends!!  
+
+Lets try to measure the rationality #todo
+- Performance measure - awards one point for each clean square at each time step
+- Prior knowledge → 
+- Available actions → left, right and suck
+- Agent's percepts to date → 
+
+### Vacuum cleaner is it irrational?
+
+Is it possible to prove that the same agent is irrational?
+
+## Nature of Environment
+
+### 1. Specifying the Task Environment
+
+It is a collection of performance measure, environment, actuators and sensors. (**PEAS**)  
+Eg. a self driving tesla
+
+![Task Environment](Task%20Environment.png)
+### 2. Properties of Task Environment
+
+- Fully observable vs partially observable task environment
+	- fully observable envt. implies that the entire environment is known
+- Single agent vs Multi agent
+	- eg. an agent playing chess is a 2-agent envt.
+- Deterministic vs stochastic
+	- deterministic system is if we can predict the next state of the envt. by using the current state
+- Episodic vs sequential
+	- in sequential envt. the history of the envt will affect the next step
+	- in episodic, the next episode does not depend on the actions taken in previous episodes
+- Static vs Dynamic
+	- #todo
+- Discrete vs. continuous
+- Known vs. unknown
+
+---

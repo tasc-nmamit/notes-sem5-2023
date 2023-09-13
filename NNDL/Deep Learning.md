@@ -1,6 +1,6 @@
 5 Sept 2023
 
-### Definition
+# Definition
 Deep Learning is a subset of a more general field of AI called ML, which is predicated on this idea of **learning from example**.
 
 ---
@@ -39,11 +39,11 @@ Artificial Neuron is a mathematical function based on a model of biological neur
 
 Perceptron is a building block of an artificial neural network. It is also understood as an Artificial Neuron or NN Unit that helps detect certain data computations.
 
-### Basic Components of Perceptron
+## Basic Components of Perceptron
 
 ![[Perceptron.png]]
 
-### Working
+## Working
 
 - A weight is assigned to every input. 
 - Net input function (weights + bias) -> The weighted inputs are summed.
@@ -60,7 +60,7 @@ ps. Perceptron -> no hidden layers
 Perceptron is consider a single-layer neural network
 - 4 Parameters → input values, weights & bias, net sum and activation function
 
-### Step 1: Weighted Sum
+## Step 1: Weighted Sum
 Multiply all input values with corresponding weight values and calculate the weighted sum.
 $$
 \Sigma (wi*xi) = x1*w1 + x2*w2 + ... + wn*xn
@@ -72,7 +72,7 @@ $$
 $$
 FAQ → Why do we need bias?
 
-### Step 2: Activation function
+## Step 2: Activation function
 
 An activation function is applied with the above-mentioned weighted sum, which gives us output either in binary format or a continuous value as follow. (there are different types of activation function with different formulas which will be studied in the later classes)
 $$
@@ -98,7 +98,7 @@ Q. Explain dead relu problem and how it can be overcome with the help of leaky r
 Q. explain vanishing gradient problem with an example.  
 Q. Explain exploding gradient problem with an example.
 
-Definition: It is the internal state of the neuron. It represents is used to convert the input signal of ANN node to an output signal.
+**Definition**: It is the internal state of the neuron. It represents is used to convert the input signal of ANN node to an output signal.
 
 It is applied to the weighted sum of inputs and biases of the neuron.
 
@@ -182,10 +182,28 @@ It is the variation of the standard ReLu activation function that addresses some
 
 # Forward & Backward propagation #imp #10m
 
->[!Diagram]  
+>[!diagram]  
 >Consider the following NN (notebook)
->
 
+## Forward Propagation 
+- get the inputs, calculate weighted sum, add bias & activation function and find the output
+
+## Backward Propagation (of errors)
+- It is the method of fine tuning the weights of a neural network based on the error or loss obtained in the feed forward network.
+
+Consists of 2 steps
+
+- $y = w^Tx + b$
+
+### 1. Weight Updation Formula
+- $w_{new} = w_{old} - \eta\frac{\partial L}{\partial w_{old}}$
+- where $\eta$ is learning rate (a small value say 0.001)
+- $\frac{\partial L}{\partial w_{old}}$ is the slope
+- 
+- Gradient descent...
+	- 
+
+### 2. Chain rule of differentiation
 
 
 ---
